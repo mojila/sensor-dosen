@@ -24,7 +24,7 @@ function writeStatusData(data) {
 }
 
 async function run () {
-    const browser = await puppeteer.launch( );
+    const browser = await puppeteer.launch({args: ['--no-sandbox']});
     const page = await browser.newPage();
     let data = [];
     let results = [];
