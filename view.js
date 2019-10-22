@@ -34,4 +34,5 @@ async function run () {
     return browser.close();
 }
 
-run();
+run()
+    .then(() => process.exit(0));
