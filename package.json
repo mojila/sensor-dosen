@@ -1,0 +1,16 @@
+{
+  "name": "whats-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^7.2.1",
+    "puppeteer": "^1.20.0"
+  }
+}
