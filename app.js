@@ -17,10 +17,12 @@ const url = 'https://mis.eepis-its.edu/unit/pegawai/absensi/rekap.php';
 
 const db = app.database();
 
-function writeStatusData(data) {
-    db.ref('/status').set({
+async function writeStatusData(data) {
+    await db.ref('/status').set({
         dosen: data
     });
+
+    await db.goOffline();
 }
 
 async function run () {
